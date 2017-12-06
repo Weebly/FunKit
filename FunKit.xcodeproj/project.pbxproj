@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		61928F651FD8531D0003A0E8 /* FunKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61928F5B1FD8531C0003A0E8 /* FunKit.framework */; };
 		61928F6C1FD8531D0003A0E8 /* FunKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61928F5E1FD8531C0003A0E8 /* FunKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61928F871FD86F250003A0E8 /* FunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61928F851FD86F250003A0E8 /* FunctionalTests.swift */; };
+		61928F881FD86F250003A0E8 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61928F861FD86F250003A0E8 /* Generics.swift */; };
+		61928F8A1FD86F2F0003A0E8 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61928F891FD86F2E0003A0E8 /* Functional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,9 @@
 		61928F5F1FD8531C0003A0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61928F641FD8531D0003A0E8 /* FunKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61928F6B1FD8531D0003A0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61928F851FD86F250003A0E8 /* FunctionalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalTests.swift; sourceTree = "<group>"; };
+		61928F861FD86F250003A0E8 /* Generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
+		61928F891FD86F2E0003A0E8 /* Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 			children = (
 				61928F5E1FD8531C0003A0E8 /* FunKit.h */,
 				61928F5F1FD8531C0003A0E8 /* Info.plist */,
+				61928F891FD86F2E0003A0E8 /* Functional.swift */,
 			);
 			path = FunKit;
 			sourceTree = "<group>";
@@ -79,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				61928F6B1FD8531D0003A0E8 /* Info.plist */,
+				61928F851FD86F250003A0E8 /* FunctionalTests.swift */,
+				61928F861FD86F250003A0E8 /* Generics.swift */,
 			);
 			path = FunKitTests;
 			sourceTree = "<group>";
@@ -150,6 +159,7 @@
 					};
 					61928F631FD8531D0003A0E8 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -194,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61928F8A1FD86F2F0003A0E8 /* Functional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61928F871FD86F250003A0E8 /* FunctionalTests.swift in Sources */,
+				61928F881FD86F250003A0E8 /* Generics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,12 +389,15 @@
 		61928F731FD8531D0003A0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M378EFHK7;
 				INFOPLIST_FILE = FunKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weebly.FunKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +406,8 @@
 		61928F741FD8531D0003A0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M378EFHK7;
 				INFOPLIST_FILE = FunKitTests/Info.plist;
