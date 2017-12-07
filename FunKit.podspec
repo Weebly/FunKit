@@ -13,7 +13,7 @@ DESC
 
   s.author       = "jacob berkman"
 
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "10.0"
 
   s.source       = { :git => "https://github.com/Weebly/FunKit.git", :tag => "v#{s.version}" }
 
