@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FunKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A Functional Toolkit for Swift."
 
   s.description  = <<-DESC
@@ -13,7 +13,7 @@ DESC
 
   s.author       = "jacob berkman"
 
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "9.0"
 
   s.source       = { :git => "https://github.com/Weebly/FunKit.git", :tag => "v#{s.version}" }
 
