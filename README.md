@@ -1,5 +1,6 @@
 # Pipelines. Promises. Railways. Your way.
 [![Documentation][docs-badge]][docs]
+[![CocoaPods][pod-badge]][pod]
 
 **FunKit** is a functional toolkit for [Swift][swift]. It integrates [railway-oriented programming][railways] with [promises][promises], providing a novel way to build Swift applications.
 
@@ -64,6 +65,8 @@ The `unwrap` function converts `nil` values to failures, while `tryCatch` does t
 
 [docs]: https://weebly.github.io/FunKit/
 [docs-badge]: https://weebly.github.io/FunKit/badge.svg
+[pod]: https://cocoapods.org/pods/FunKit
+[pod-badge]: https://img.shields.io/cocoapods/v/FunKit.svg
 [promises]: https://promisesaplus.com/
 [railways]: https://fsharpforfunandprofit.com/posts/recipe-part2/
 [swift]: https://swift.org/
