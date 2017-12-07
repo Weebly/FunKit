@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Promise Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Promise" class="dashAnchor"></a>
+    <a title="Promise Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FunKit Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/Weebly/FunKit"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fweebly%2Egithub%2Eio%2FFunKit%2Fdocsets%2FFunKit%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FunKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Promise Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Promise.html">Promise</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EquatableResult.html">EquatableResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Failure.html">Failure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Nil.html">Nil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Result.html">Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;=&gt;(_:_:).html">&gt;=&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/&gt;&gt;&gt;(_:_:).html">&gt;&gt;&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit5bimapAA6ResultOyq_q1_GADyxq0_Gcq_xcyXK_q1_q0_cyXKtr2_lF">bimap(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit4bindAA6ResultOyq_q0_GADyxq0_GcAExcyXKr1_lF">bind(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7composeq0_xcq_xcyXK_q0_q_cyXKtr1_lF">compose(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit5curryq0_q_cxcq0_x_q_tcyXKr1_lF">curry(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit5curryq1_q0_cq_cxcq1_x_q_q0_tcyXKr2_lF">curry(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit5curryq2_q1_cq0_cq_cxcq2_x_q_q0_q1_tcyXKr3_lF">curry(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit8identityxxlF">identity(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit6ignoreyxlF">ignore(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit3mapAA6ResultOyq_q0_GADyxq0_Gcq_xcyXKr1_lF">map(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit4pipeq_x_q_xctr0_lF">pipe(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7reverseq0_q__xtcq0_x_q_tcyXKr1_lF">reverse(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7reverseq0_xcq_cq0_q_cxcyXKr1_lF">reverse(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7reverseq1_q0__q_xtcq1_x_q_q0_tcyXKr2_lF">reverse(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7reverseq1_xcq_cq0_cq1_q0_cq_cxcyXKr2_lF">reverse(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7reverseq2_q1__q0_q_xtcq2_x_q_q0_q1_tcyXKr3_lF">reverse(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7reverseq2_xcq_cq0_cq1_cq2_q1_cq0_cq_cxcyXKr3_lF">reverse(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit3teexxKcq_xKcyXKr0_lF">tee(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit3teexxcq_xcyXKr0_lF">tee(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit8tryCatchAA6ResultOyq_s5Error_pGxcq_xKcyXKr0_lF">tryCatch(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit6turninAA6ResultOyxq0_GADyxq_GcAEq_cyXKr1_lF">turnin(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit6turninxAA6ResultOyxq_Gcxq_cyXKr0_lF">turnin(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7turnoutAA6ResultOyq_q0_Gxcq_xcyXKr1_lF">turnout(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7uncurryq0_x_q_tcq0_q_cxcyXKr1_lF">uncurry(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7uncurryq1_x_q_q0_tcq1_q0_cq_cxcyXKr2_lF">uncurry(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7uncurryq2_x_q_q0_q1_tcq2_q1_cq0_cq_cxcyXKr3_lF">uncurry(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit7uncurryq_xcq_ycyXKr0_lF">uncurry(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit6unwrapAA6ResultOyq_AA3NilOGxcq_SgxcyXKr0_lF">unwrap(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6FunKit6unwrapAA6ResultOyxAA3NilOGxSglF">unwrap(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions/|&gt;(_:_:).html">|&gt;(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Promise</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Promise</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A promise represents the eventual result of an asynchronous operation. The
+primary way of interacting with a promise is through its then method, which
+registers callbacks to receive either a promise’s eventual value or the
+reason why the promise cannot be fulfilled.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC3tryACyxGAEyKcFZ"></a>
+                    <a name="//apple_ref/swift/Method/try(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC3tryACyxGAEyKcFZ">try(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wrap creating a promise in a promise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="err">`</span><span class="k">try</span><span class="err">`</span><span class="p">(</span><span class="n">_</span> <span class="nv">makePromise</span><span class="p">:</span> <span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Promise</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>makePromise</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>block which creates a promise. Errors thrown will be
+reflected in the returned promise.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the promise returned by <code>makePromise</code>, or rejected by an error thrown by <code>makePromise</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L76-L82">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseCACyxGyyycc8dispatch_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(dispatch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseCACyxGyyycc8dispatch_tcfc">init(dispatch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a new promise. Callbacks will be performed by calling <code>dispatch</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="nv">dispatch</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="o">=</span> <span class="p">{</span> <span class="nv">$0</span><span class="p">()</span> <span class="p">})</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dispatch</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>block used to execute callbacks.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L89-L91">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC7fulfillyx4with_tF"></a>
+                    <a name="//apple_ref/swift/Method/fulfill(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC7fulfillyx4with_tF">fulfill(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fulfills this promise with a value. Any previous or future calls to
+<code>then()</code> will be completed with <code>value</code>. If this promise has already
+been fulfilled or rejected, this function does nothing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fulfill</span><span class="p">(</span><span class="n">with</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the value fulfilling this promise.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L139-L145">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC7fulfillyACyxGcxyXK4with_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/fulfill(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC7fulfillyACyxGcxyXK4with_tFZ">fulfill(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a function which fulfills a promise with a value. Any previous or
+future calls to <code>promise.then()</code> will be fulfilled with <code>value</code>. If the
+promise has already been fulfilled or rejected, the returned function does
+nothing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">fulfill</span><span class="p">(</span><span class="n">with</span> <span class="nv">value</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Promise</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the value to fulfill <code>Promise</code>s with.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L155-L157">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC6rejectys5Error_p4with_tF"></a>
+                    <a name="//apple_ref/swift/Method/reject(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC6rejectys5Error_p4with_tF">reject(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rejects this promise with an error. Any previous or future calls to
+<code>catch()</code> will be completed with <code>error</code>. If this promise has already
+been fulfilled or rejected, this function does nothing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reject</span><span class="p">(</span><span class="n">with</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the error rejecting this promise.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L170-L176">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC6rejectyACyxGcs5Error_pyXK4with_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/reject(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC6rejectyACyxGcs5Error_pyXK4with_tFZ">reject(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a function which rejects a promise with an error. Any previous or
+future calls to <code>promise.catch()</code> will be completed with <code>error</code>. If the
+promise has already been fulfilled or rejected, the returned function does
+nothing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">reject</span><span class="p">(</span><span class="n">with</span> <span class="nv">error</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Promise</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the error rejecting this promise.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L186-L188">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC4thenACyxGyxcyXKF"></a>
+                    <a name="//apple_ref/swift/Method/then(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC4thenACyxGyxcyXKF">then(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled. If this
+promise has already been fulfilled, <code>completion</code> will still be called. If
+this promise is rejected, <code>completion</code> will not be called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">then</span><span class="p">(</span><span class="n">_</span> <span class="nv">fulfillment</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L204-L211">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC4thenACyxGyxKcyXKF"></a>
+                    <a name="//apple_ref/swift/Method/then(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC4thenACyxGyxKcyXKF">then(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled. If this
+promise has already been fulfilled, <code>completion</code> will still be called. If
+this promise is rejected, <code>completion</code> will not be called.</p>
+
+<p>The value this promise was fulfilled with will fulfill the returned promise,
+unless an error is thrown by <code>completion</code>, which will reject the promise
+instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">then</span><span class="p">(</span><span class="n">_</span> <span class="nv">fulfillment</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new promise to be fulfilled or rejected by <code>completion</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L226-L234">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC4thenACyqd__Gqd__xKcyXKlF"></a>
+                    <a name="//apple_ref/swift/Method/then(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC4thenACyqd__Gqd__xKcyXKlF">then(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled. If this
+promise has already been fulfilled, <code>completion</code> will still be called. If
+this promise is rejected, <code>completion</code> will not be called.</p>
+
+<p>The value returned by <code>completion</code> will fulfill the returned promise,
+unless an error is thrown, which will reject the promise instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">then</span><span class="o">&lt;</span><span class="kt">NewValue</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">fulfillment</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">NewValue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span><span class="o">&lt;</span><span class="kt">NewValue</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new promise to be fulfilled or rejected by <code>completion</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L248-L256">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC4thenACyqd__Gqd__xcyXKlF"></a>
+                    <a name="//apple_ref/swift/Method/then(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC4thenACyqd__Gqd__xcyXKlF">then(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled. If this
+promise has already been fulfilled, <code>completion</code> will still be called. If
+this promise is rejected, <code>completion</code> will not be called.</p>
+
+<p>The promise returned by <code>completion</code> will be used to fulfill or reject the
+returned promise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">then</span><span class="o">&lt;</span><span class="kt">NewValue</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">fulfillment</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NewValue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span><span class="o">&lt;</span><span class="kt">NewValue</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new promise to be fulfilled or rejected by <code>completion</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L270-L276">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC5catchACyxGys5Error_pcyXKF"></a>
+                    <a name="//apple_ref/swift/Method/catch(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC5catchACyxGys5Error_pcyXKF">catch(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is rejected. If this
+promise has already been rejected, <code>completion</code> will still be called. If
+this promise is fulfilled, <code>completion</code> will not be called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="err">`</span><span class="k">catch</span><span class="err">`</span><span class="p">(</span><span class="n">_</span> <span class="nv">rejection</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon rejection.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L292-L299">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC7finallyACyxGyycyXKF"></a>
+                    <a name="//apple_ref/swift/Method/finally(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC7finallyACyxGyycyXKF">finally(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled or
+rejected. If this promise has already been fulfilled or rejected,
+<code>completion</code> will still be called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">finally</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment or
+rejection.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L311-L315">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC5asyncACyxGAEcSo13DispatchQueueC4with_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/async(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC5asyncACyxGAEcSo13DispatchQueueC4with_tFZ">async(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new promise fulfilled or rejected by this promise which runs any
+completions on <code>queue</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">async</span><span class="p">(</span><span class="n">with</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Promise</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a dispatch queue on which to run completions.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a block returning new promise to be fulfilled or rejected by the
+provided promise.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L329-L331">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC5asyncACyxGSo13DispatchQueueC4with_tF"></a>
+                    <a name="//apple_ref/swift/Method/async(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC5asyncACyxGSo13DispatchQueueC4with_tF">async(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new promise fulfilled or rejected by this promise which runs any
+completions on <code>queue</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">async</span><span class="p">(</span><span class="n">with</span> <span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a dispatch queue on which to run completions.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new promise to be fulfilled or rejected by <code>self</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L340-L346">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC4mainACyxGAEFZ"></a>
+                    <a name="//apple_ref/swift/Method/main(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC4mainACyxGAEFZ">main(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new promise fulfilled or rejected by <code>promise</code> which runs any
+completions on the main thread.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">main</span><span class="p">(</span><span class="n">_</span> <span class="nv">promise</span><span class="p">:</span> <span class="kt">Promise</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new promise to be fulfilled or rejected by <code>promise</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L354-L356">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC4mainACyxGyF"></a>
+                    <a name="//apple_ref/swift/Method/main()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC4mainACyxGyF">main()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new promise fulfilled or rejected by this promise which runs any
+completions on the main thread.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new promise to be fulfilled or rejected by <code>self</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L364-L366">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC8completeyAA6ResultOyxqd__G4with_tlF"></a>
+                    <a name="//apple_ref/swift/Method/complete(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC8completeyAA6ResultOyxqd__G4with_tlF">complete(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fulfill or reject this promise with a <code><a href="../Enums/Result.html">Result</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">complete</span><span class="o">&lt;</span><span class="kt">E</span><span class="o">&gt;</span><span class="p">(</span><span class="n">with</span> <span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Enums/Result.html">Result</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the result containing a value which will fulfill or
+reject <code>self</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L400-L402">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseCACyxGAA6ResultOyxqd__G6result_tclufc"></a>
+                    <a name="//apple_ref/swift/Method/init(result:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseCACyxGAA6ResultOyxqd__G6result_tclufc">init(result:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>Promise</code> fulfilled or rejected by the given <code><a href="../Enums/Result.html">Result</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">E</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Enums/Result.html">Result</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">E</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the result containing a value which will fulfill or
+reject <code>self</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L410-L413">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC2qgoiACyxGAE_yxcyXKtFZ"></a>
+                    <a name="//apple_ref/swift/Method/?&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC2qgoiACyxGAE_yxcyXKtFZ">?&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled. If this
+promise has already been fulfilled, <code>completion</code> will still be called. If
+this promise is rejected, <code>completion</code> will not be called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="p">?</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">promise</span><span class="p">:</span> <span class="kt">Promise</span><span class="p">,</span> <span class="nv">f</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>promise</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the promise on which to add the fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>promise</code></p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L425-L427">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC2qgoiACyxGAE_yxKcyXKtFZ"></a>
+                    <a name="//apple_ref/swift/Method/?&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC2qgoiACyxGAE_yxKcyXKtFZ">?&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled. If this
+promise has already been fulfilled, <code>completion</code> will still be called. If
+this promise is rejected, <code>completion</code> will not be called.</p>
+
+<p>The value this promise was fulfilled with will fulfill the returned promise,
+unless an error is thrown by <code>completion</code>, which will reject the promise
+instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="p">?</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">promise</span><span class="p">:</span> <span class="kt">Promise</span><span class="p">,</span> <span class="nv">f</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>promise</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the promise on which to add the fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new promise to be fulfilled or rejected by <code>completion</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L443-L445">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC2qgoiACyqd__GACyxG_qd__xcyXKtlFZ"></a>
+                    <a name="//apple_ref/swift/Method/?&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC2qgoiACyqd__GACyxG_qd__xcyXKtlFZ">?&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled. If this
+promise has already been fulfilled, <code>completion</code> will still be called. If
+this promise is rejected, <code>completion</code> will not be called.</p>
+
+<p>The promise returned by <code>completion</code> will be used to fulfill or reject the
+returned promise.</p>
+
+                        <a href="../Classes/Promise/?>(_:_:).html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="p">?</span><span class="o">&gt;&lt;</span><span class="kt">NewValue</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">promise</span><span class="p">:</span> <span class="kt"><a href="../Classes/Promise.html">Promise</a></span><span class="p">,</span> <span class="nv">f</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NewValue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Promise.html">Promise</a></span><span class="o">&lt;</span><span class="kt">NewValue</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>promise</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the promise on which to add the fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new promise to be fulfilled or rejected by <code>completion</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L460-L462">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC2qgoiACyqd__GACyxG_qd__xKcyXKtlFZ"></a>
+                    <a name="//apple_ref/swift/Method/?&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC2qgoiACyqd__GACyxG_qd__xKcyXKtlFZ">?&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled. If this
+promise has already been fulfilled, <code>completion</code> will still be called. If
+this promise is rejected, <code>completion</code> will not be called.</p>
+
+<p>The value returned by <code>completion</code> will fulfill the returned promise,
+unless an error is thrown, which will reject the promise instead.</p>
+
+                        <a href="../Classes/Promise/?>(_:_:).html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="p">?</span><span class="o">&gt;&lt;</span><span class="kt">NewValue</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">promise</span><span class="p">:</span> <span class="kt"><a href="../Classes/Promise.html">Promise</a></span><span class="p">,</span> <span class="nv">f</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">NewValue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Promise.html">Promise</a></span><span class="o">&lt;</span><span class="kt">NewValue</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>promise</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the promise on which to add the fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new promise to be fulfilled or rejected by <code>completion</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L477-L479">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC2ngoiACyxGAE_ys5Error_pcyXKtFZ"></a>
+                    <a name="//apple_ref/swift/Method/!&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC2ngoiACyxGAE_ys5Error_pcyXKtFZ">!&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is rejected. If this
+promise has already been rejected, <code>completion</code> will still be called. If
+this promise is fulfilled, <code>completion</code> will not be called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">!&gt;</span><span class="p">(</span><span class="nv">promise</span><span class="p">:</span> <span class="kt">Promise</span><span class="p">,</span> <span class="nv">f</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>promise</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the promise on which to add the completion.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon rejection.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>promise</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L491-L493">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6FunKit7PromiseC2mgoiACyxGAE_yycyXKtFZ"></a>
+                    <a name="//apple_ref/swift/Method/*&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6FunKit7PromiseC2mgoiACyxGAE_yycyXKtFZ">*&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register a completion to be called when this promise is fulfilled or
+rejected. If this promise has already been fulfilled or rejected,
+<code>completion</code> will still be called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*&gt;</span><span class="p">(</span><span class="nv">promise</span><span class="p">:</span> <span class="kt">Promise</span><span class="p">,</span> <span class="nv">f</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Promise</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>promise</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the promise on which to add the completion.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion to be called upon fulfillment or
+rejection.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>promise</code>.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Weebly/FunKit/tree/v0.1.0/FunKit/Promise.swift#L506-L508">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://weebly.com" target="_blank" rel="external">Weebly</a>. All rights reserved. (Last updated: 2017-12-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
