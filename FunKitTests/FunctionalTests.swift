@@ -31,12 +31,12 @@ import XCTest
 
 class FunctionalTests: XCTestCase {
 
-    private func f(a: A) -> B {
+    fileprivate func f(a: A) -> B {
         XCTAssertEqual(a, .a)
         return .b
     }
 
-    private func g(b: B) -> C {
+    fileprivate func g(b: B) -> C {
         XCTAssertEqual(b, .b)
         return .c
     }
@@ -92,7 +92,7 @@ extension FunctionalTests {
 
 extension FunctionalTests {
 
-    private func f(a: A, b: B) -> C {
+    fileprivate func f(a: A, b: B) -> C {
         XCTAssertEqual(a, .a)
         XCTAssertEqual(b, .b)
         return .c
@@ -112,7 +112,7 @@ extension FunctionalTests {
 
 extension FunctionalTests {
 
-    private func f(a: A, b: B, c: C) -> D {
+    fileprivate func f(a: A, b: B, c: C) -> D {
         XCTAssertEqual(a, .a)
         XCTAssertEqual(b, .b)
         XCTAssertEqual(c, .c)
@@ -133,7 +133,7 @@ extension FunctionalTests {
 
 extension FunctionalTests {
 
-    private func f(a: A, b: B, c: C, d: D) -> E {
+    fileprivate func f(a: A, b: B, c: C, d: D) -> E {
         XCTAssertEqual(a, .a)
         XCTAssertEqual(b, .b)
         XCTAssertEqual(c, .c)
@@ -180,7 +180,7 @@ extension FunctionalTests {
         }
     }
 
-    private func f2() -> (A) -> (B) -> C {
+    fileprivate func f2() -> (A) -> (B) -> C {
         XCTFail("Should not be evaluated")
         return curryf
     }
@@ -210,7 +210,7 @@ extension FunctionalTests {
         }
     }
 
-    private func f3() -> (A) -> (B) -> (C) -> D {
+    fileprivate func f3() -> (A) -> (B) -> (C) -> D {
         XCTFail("Should not be evaluated")
         return f
     }
@@ -243,7 +243,7 @@ extension FunctionalTests {
         }
     }
 
-    private func f4() -> (A) -> (B) -> (C) -> (D) -> E {
+    fileprivate func f4() -> (A) -> (B) -> (C) -> (D) -> E {
         XCTFail("Should not be evaluated")
         return f
     }

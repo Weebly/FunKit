@@ -86,11 +86,22 @@ public final class Promise<Value> {
         self.dispatch = dispatch
     }
 
+    fileprivate func takeLock() -> Void { lock.lock() }
     fileprivate func giveLock<A>(_ a: A) -> A { lock.unlock(); return a }
 
     fileprivate func pendingCallbacks<A>(_: A) -> Completions<Value>? {
         guard case let .pending(completions) = state else { return nil }
         return completions
+    }
+
+    fileprivate func value<A>(_: A) -> Value? {
+        guard case let .fulfilled(value) = state else { return nil }
+        return value
+    }
+
+    fileprivate func error<A>(_: A) -> Error? {
+        guard case let .rejected(error) = state else { return nil }
+        return error
     }
 
     fileprivate func stateSetter<A>(state: State<Value>) -> (A) -> A {
@@ -133,7 +144,7 @@ extension Promise {
      - Parameter value: the value fulfilling this promise.
      */
     public func fulfill(with value: Value) {
-        _ = lock.lock()
+        _ = takeLock()
             |> unwrap(self.fulfillments)
             >>>= turnout(.fulfilled(value) |> self.stateSetter)
             |> giveLock
@@ -164,7 +175,7 @@ extension Promise {
      - Parameter error: the error rejecting this promise.
      */
     public func reject(with error: Error) {
-        _ = lock.lock()
+        _ = takeLock()
             |> unwrap(self.rejections)
             >>>= turnout(.rejected(error) |> self.stateSetter)
             |> giveLock
@@ -183,11 +194,6 @@ extension Promise {
         return { $0.reject(with: error()) }
     }
 
-    private func value<A>(_: A) -> Value? {
-        guard case let .fulfilled(value) = state else { return nil }
-        return value
-    }
-
     /**
      Register a completion to be called when this promise is fulfilled. If this
      promise has already been fulfilled, `completion` will still be called. If
@@ -198,7 +204,7 @@ extension Promise {
      */
     @discardableResult
     public func then(_ fulfillment: @autoclosure @escaping () -> (Value) -> Void) -> Promise {
-        return lock.lock()
+        return takeLock()
             |> unwrap(self.value)
             |> bimap(identity, self.addCompletions(fulfillments: [fulfillment()]))
             |> giveLock
@@ -271,11 +277,6 @@ extension Promise {
         return promise
     }
 
-    private func error<A>(_: A) -> Error? {
-        guard case let .rejected(error) = state else { return nil }
-        return error
-    }
-
     /**
      Register a completion to be called when this promise is rejected. If this
      promise has already been rejected, `completion` will still be called. If
@@ -286,7 +287,7 @@ extension Promise {
      */
     @discardableResult
     public func `catch`(_ rejection: @autoclosure @escaping () -> (Error) -> Void) -> Promise {
-        return lock.lock()
+        return takeLock()
             |> unwrap(self.error)
             |> bimap(identity, self.addCompletions(rejections: [rejection()]))
             |> giveLock

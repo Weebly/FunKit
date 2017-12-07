@@ -85,12 +85,12 @@ extension RailwayTests {
 
 extension RailwayTests {
 
-    private func succeed3(a: A) -> B {
+    fileprivate func succeed3(a: A) -> B {
         XCTAssertEqual(a, .a)
         return .b
     }
 
-    private func notCalled3() -> (A) -> B {
+    fileprivate func notCalled3() -> (A) -> B {
         XCTFail("Method should not be reached")
         return succeed3
     }
@@ -161,17 +161,17 @@ enum Error: Swift.Error { case error }
 
 extension RailwayTests {
 
-    private func succeed4(a: A) throws -> B {
+    fileprivate func succeed4(a: A) throws -> B {
         XCTAssertEqual(a, .a)
         return .b
     }
 
-    private func throwing(a: A) throws -> B {
+    fileprivate func throwing(a: A) throws -> B {
         XCTAssertEqual(a, .a)
         throw Error.error
     }
 
-    private func notCalled4() -> (A) throws -> B {
+    fileprivate func notCalled4() -> (A) throws -> B {
         XCTFail("Method should not be reached")
         return succeed4
     }
