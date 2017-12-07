@@ -1,5 +1,6 @@
-# Pipelines. Promises. Railways. Your way.
+[![master][master-badge]][builds]
 [![Documentation][docs-badge]][docs]
+# Pipelines. Promises. Railways. Your way.
 
 **FunKit** is a functional toolkit for [Swift][swift]. It integrates [railway-oriented programming][railways] with [promises][promises], providing a novel way to build Swift applications.
 
@@ -62,6 +63,8 @@ The `unwrap` function converts `nil` values to failures, while `tryCatch` does t
 
 **FunKit** makes extensive use of `@autoclosure` in an effort to provide lazy evaluation. However, the performance impacts have not been looked into.
 
+[builds]: https://travis-ci.org/Weebly/FunKit
+[master-badge]: https://img.shields.io/travis/Weebly/FunKit/master.svg
 [docs]: https://weebly.github.io/FunKit/
 [docs-badge]: https://weebly.github.io/FunKit/badge.svg
 [promises]: https://promisesaplus.com/
