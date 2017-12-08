@@ -9,6 +9,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 1. You may merge a pull request once you have from an admin, or you may request an admin merge it for you.
 1. Rejected pull requests may be closed, but feel free to maintain a forked branch.
+1. Pull requests should be against the `develop` branch. `master` is updated after releases.
 
 ## Contributor Covenant Code of Conduct
 
